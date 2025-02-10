@@ -38,14 +38,9 @@ public class UserDTO {
         this.phone = phone;
         this.website = website;
         this.postTitles = postTitles;
-        
-        //this.postTitles = user.getPosts().stream()
-          //      .map(Post::getTitle) // Map each Post to its title
-          //       .collect(Collectors.toList()); // Collect the titles into a List<String>
     }
 
     // Getters & Setters
-    
 	public Long getId() {
 		return id;
 	}
