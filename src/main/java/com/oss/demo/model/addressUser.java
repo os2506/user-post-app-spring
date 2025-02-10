@@ -17,13 +17,13 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "addresses")
 public class addressUser {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id; 
-	private String street;
-	private String suite;
-	private String city;
-	private String zipcode;
+   @Id
+   @GeneratedValue(strategy = GenerationType.IDENTITY)
+   private Long id; 
+   private String street;
+   private String suite;
+   private String city;
+   private String zipcode;
 	
     @Embedded
     private Geo geo;
