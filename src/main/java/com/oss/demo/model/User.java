@@ -21,17 +21,17 @@ import lombok.NoArgsConstructor;
 @Table(name = "users")
 public class User {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
-	private String name;
-	private String username;
-	private String email;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String name;
+    private String username;
+    private String email;
 	
-	
-	@OneToOne(cascade = CascadeType.ALL)
+    
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "address_id", referencedColumnName = "id")
-	private addressUser address; 
+    private addressUser address; 
 	
 	
     @OneToOne(cascade = CascadeType.ALL)
