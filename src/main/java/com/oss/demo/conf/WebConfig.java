@@ -19,6 +19,6 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/uploads/images/**")
-                .addResourceLocations("file:/Users/dnaprodudction/workspace2025/postAppSpring-api/uploads/images/"); // Full path
+                .addResourceLocations("file:../postAppSpring-api/uploads/images/"); // Full path
     }
 }
